@@ -10,5 +10,6 @@ final class AppModule extends AbstractModule
 {
     protected function configure(): void
     {
+        $this->install(new \NaokiTsuchiya\MyApp\AppModule());
     }
 }
