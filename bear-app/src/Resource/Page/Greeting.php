@@ -15,7 +15,9 @@ class Greeting extends ResourceObject
 
     public function onGet(string $name = 'other'): static
     {
-        $this->body = $this->resource->get('page://other/', ['name' => $name]);
+        $ro = $this->resource->get('page://other/', ['name' => $name]);
+        $this->headers = $ro->headers;
+        $this->body = $ro->body;
 
         return $this;
     }
