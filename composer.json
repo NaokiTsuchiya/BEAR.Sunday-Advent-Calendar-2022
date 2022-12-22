@@ -27,13 +27,15 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "NaokiTsuchiya\\MyApp\\": "bear-app/src"
+            "NaokiTsuchiya\\MyApp\\": "bear-app/src",
+            "NaokiTsuchiya\\OtherApp\\": "other-bear-app/src"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/",
-            "NaokiTsuchiya\\MyApp\\": "bear-app/tests"
+            "NaokiTsuchiya\\MyApp\\": "bear-app/tests",
+            "NaokiTsuchiya\\OtherApp\\": "other-bear-app/tests"
         }
     },
     "scripts": {
